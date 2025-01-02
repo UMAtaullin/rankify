@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:css": "stylelint '**/*.css'",
+    "lint:scss": "stylelint '**/*.scss'",
+    "lint:fix": "stylelint '**/*.css' --fix"
   },
   "dependencies": {
     "next": "15.1.3",
@@ -22,6 +25,12 @@
     "@typescript-eslint/parser": "^8.19.0",
     "eslint": "^9.17.0",
     "eslint-config-next": "15.1.3",
+    "stylelint": "^16.12.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-order": "^6.0.4",
+    "stylelint-prettier": "^5.0.2",
+    "stylelint-scss": "^6.10.0",
     "typescript": "^5"
   }
 }
